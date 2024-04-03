@@ -1,7 +1,8 @@
 # Gallery
 ## Download apk
 https://github.com/EslamFares/Gallery/blob/master/app/apk/app-release.apk
-## video for ap 
+## video for app
+ https://drive.google.com/file/d/1IhXPvsdoge-H4Zo1D-fzFLmYL935jBPi/view?usp=drive_link
 https://github.com/EslamFares/Gallery/blob/master/app/video/gallery_app_video.mp4
 
 <h4>Auth <img align="center" height="20" src="https://icons.veryicon.com/png/o/miscellaneous/simple-line-icon/authentication-16.png"></h4>
