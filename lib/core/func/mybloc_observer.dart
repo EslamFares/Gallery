@@ -34,5 +34,3 @@ class MyBlocObserver extends BlocObserver {
     }
   }
 }
-//! add in main
-//Bloc.observer = MyBlocObserver();

@@ -2,6 +2,7 @@ class EndPoint {
   static String baseUrl = "https://flutter.prominaagency.com/api/";
   static String login = 'auth/login';
   static String getMyGallery = 'my-gallery';
+  static String uplaodImg = 'upload';
 }
 
 // class ApiKey {

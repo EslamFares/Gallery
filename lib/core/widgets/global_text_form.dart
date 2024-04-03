@@ -89,7 +89,7 @@ class GlobalTextForm extends StatelessWidget {
           hintText: hintText,
           contentPadding: const EdgeInsets.only(left: 30, right: 10),
           labelText: labelText,
-          labelStyle: AppTextStyles.font16PoppinsDarkW500,
+          labelStyle: AppTextStyles.font16DarkW500,
           filled: true,
           fillColor: Colors.white,
           focusedBorder: outLineBorder(color: AppColors.blue),

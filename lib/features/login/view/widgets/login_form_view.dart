@@ -57,7 +57,8 @@ class LoginFormView extends StatelessWidget {
                       listener: (context, state) {
                         if (state is LoginSucessState) {
                           context.pushAndRemoveUntil(BlocProvider(
-                            create: (context) => getIt<HomeCubit>(),
+                            create: (context) =>
+                                getIt<HomeCubit>()..getMYGalleryData(),
                             child: const HomeView(),
                           ));
                         }

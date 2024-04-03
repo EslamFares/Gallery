@@ -10,29 +10,29 @@ class CustomNetWorkImg extends StatelessWidget {
       this.aspectRatio,
       this.raduisNum,
       this.customRaduis,
+      this.fit,
       this.elevation});
   final String imgUrl;
   final double? aspectRatio;
   final double? raduisNum;
   final double? elevation;
   final BorderRadius? customRaduis;
+  final BoxFit? fit;
   @override
   Widget build(BuildContext context) {
     return AspectRatio(
       aspectRatio: aspectRatio ?? .65,
       child: Material(
-        color:
-            // MediaQuery.of(context).platformBrightness == Brightness.dark?
-            AppColors.white,
+        color: AppColors.white,
         borderRadius: customRaduis ?? BorderRadius.circular(raduisNum ?? 14),
         elevation: elevation ?? 3,
         child: ClipRRect(
           borderRadius: customRaduis ?? BorderRadius.circular(raduisNum ?? 14),
           child: CachedNetworkImage(
             imageUrl: imgUrl,
-            fit: BoxFit.cover,
+            fit: fit ?? BoxFit.cover,
             placeholder: (context, url) => const Center(
-                child: CircularProgressIndicator(color: Colors.white)),
+                child: CircularProgressIndicator(color: AppColors.grayLight)),
             errorWidget: (context, url, error) =>
                 const Icon(FontAwesomeIcons.image),
           ),

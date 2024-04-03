@@ -23,6 +23,7 @@ class LoginRepo {
       debugPrint('user: $user');
       // final decodedToken = JwtDecoder.decode(user.token!);
       GetStorageHelper.writeData("userToken", "${user.token}");
+      GetStorageHelper.writeData("username", "${user.user!.name}");
       // GetStorageHelper.writeData("userId", "${decodedToken["id"]}");
       return Right(user);
     } on ServerException catch (e) {

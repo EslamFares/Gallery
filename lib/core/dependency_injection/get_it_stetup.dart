@@ -22,7 +22,7 @@ Future<void> setupGetIt() async {
       () => HomeRepo(api: getIt<ApiService>()));
 
   ///LoginCubit
-  getIt.registerLazySingleton<LoginCubit>(() => LoginCubit(getIt<LoginRepo>()));
+  getIt.registerFactory<LoginCubit>(() => LoginCubit(getIt<LoginRepo>()));
 
   ///HomeCubit
   getIt.registerLazySingleton<HomeCubit>(() => HomeCubit(getIt<HomeRepo>()));

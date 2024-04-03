@@ -1,29 +1,26 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:gallery_app/features/home/cubit/home_cubit.dart';
-import 'package:gallery_app/features/home/cubit/home_state.dart';
-import 'package:gallery_app/features/login/cubit/login_cubit.dart';
+import 'package:gallery_app/core/utils/app_decorations.dart';
+import 'package:gallery_app/core/utils/spacing_extensions.dart';
+
+import 'widgets/home_view_body.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
 
   @override
   Widget build(BuildContext context) {
-    LoginCubit loginCubit = LoginCubit.get(context);
-    String token = loginCubit.user!.token!;
-    return BlocConsumer<HomeCubit, HomeState>(
-      listener: (context, state) {},
-      builder: (context, state) {
-        HomeCubit homeCubit = HomeCubit.get(context);
-        return Scaffold(
-          body: Center(
-              child: TextButton(
-                  onPressed: () {
-                    homeCubit.getMYGalleryData();
-                  },
-                  child: const Text('ok'))),
-        );
-      },
+    return Scaffold(
+      body: SafeArea(
+        child: Container(
+          height: context.height,
+          width: context.width,
+          decoration: AppDecorations.loginPinkContainerBoxDecoration,
+          child: Container(
+            decoration: AppDecorations.loginWhiteContainerBoxDecoration,
+            child: const HomeViewBody(),
+          ),
+        ),
+      ),
     );
   }
 }
