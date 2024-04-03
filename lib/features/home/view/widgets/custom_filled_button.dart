@@ -31,7 +31,7 @@ class CustomFilledButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: witdh ?? context.width * .35,
+      width: witdh ?? context.width * .4,
       height: height ?? 45,
       child: FilledButton(
         onPressed: () {

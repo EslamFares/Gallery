@@ -22,6 +22,13 @@ class GalleryButtons extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocConsumer<HomeCubit, HomeState>(
       listener: (BuildContext context, HomeState state) {
+        if (state is UploadImgLoadingState) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(
+              content: Text('Uploading...'),
+            ),
+          );
+        }
         if (state is UploadImgSucsessState) {
           Navigator.pop(context);
           HomeCubit.get(context).getMYGalleryData();
