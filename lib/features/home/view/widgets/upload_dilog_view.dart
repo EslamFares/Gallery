@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:gallery_app/core/func/get_device_type.dart';
 import 'package:gallery_app/core/utils/app_assets.dart';
 import 'package:gallery_app/core/utils/app_colors.dart';
 import 'package:gallery_app/core/utils/app_text_styles.dart';
@@ -25,7 +26,7 @@ Future<dynamic> uploadDilogView(BuildContext context, HomeCubit homeCubit) {
         ),
         child: Container(
             width: context.width * .8,
-            height: 220,
+            height: isTablet() ? 300 : 220,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(15.0),
               color: Colors.white70,

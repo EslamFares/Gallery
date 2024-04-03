@@ -3,7 +3,7 @@ import 'package:gallery_app/core/utils/app_assets.dart';
 import 'package:gallery_app/core/utils/app_decorations.dart';
 import 'package:gallery_app/core/utils/spacing_extensions.dart';
 
-import 'widgets/login_form_view.dart';
+import 'widgets/login_form_section.dart';
 
 class LoginView extends StatelessWidget {
   const LoginView({super.key});
@@ -45,7 +45,7 @@ class LoginView extends StatelessWidget {
                     height: 120,
                     child:
                         const Image(image: AssetImage(AppAssets.loginicon3))),
-                const LoginFormView(),
+                const LoginFormSection(),
               ],
             ),
           ),

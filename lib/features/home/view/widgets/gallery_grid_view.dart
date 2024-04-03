@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gallery_app/core/func/get_device_type.dart';
 import 'package:gallery_app/core/widgets/custom_network_img.dart';
 import 'package:gallery_app/features/home/cubit/home_cubit.dart';
 
@@ -13,8 +14,8 @@ class GalleryGridView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
-        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 3,
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: isTablet() ? 5 : 3,
             childAspectRatio: 1,
             crossAxisSpacing: 15,
             mainAxisSpacing: 15),

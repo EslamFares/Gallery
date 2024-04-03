@@ -11,6 +11,8 @@ import 'package:gallery_app/features/home/view/widgets/upload_dilog_view.dart';
 import 'package:gallery_app/features/login/cubit/login_cubit.dart';
 import 'package:gallery_app/features/login/view/login_view.dart';
 
+import '../../../../core/func/get_device_type.dart';
+
 class GalleryButtons extends StatelessWidget {
   const GalleryButtons({
     super.key,
@@ -42,6 +44,7 @@ class GalleryButtons extends StatelessWidget {
             children: [
               CustomFilledButton(
                   text: "Log out",
+                  height: isTablet() ? 60 : null,
                   imgPath: AppAssets.homelogoutIcon,
                   onTap: () {
                     iosShowDialog(
@@ -57,6 +60,7 @@ class GalleryButtons extends StatelessWidget {
                   }),
               CustomFilledButton(
                   text: "upload",
+                  height: isTablet() ? 60 : null,
                   imgPath: AppAssets.homeuploadtIcon,
                   onTap: () {
                     uploadDilogView(context, homeCubit);
