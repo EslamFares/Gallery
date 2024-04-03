@@ -1,5 +1,4 @@
 import 'package:dartz/dartz.dart';
-import 'package:flutter/material.dart';
 import 'package:gallery_app/core/cash/getstorage_helper.dart';
 import 'package:gallery_app/core/network/errors/error_model.dart';
 
@@ -20,11 +19,8 @@ class LoginRepo {
         data: {"email": email, "password": password},
       );
       final user = LoginUserDataModel.fromJson(res);
-      debugPrint('user: $user');
-      // final decodedToken = JwtDecoder.decode(user.token!);
       GetStorageHelper.writeData("userToken", "${user.token}");
       GetStorageHelper.writeData("username", "${user.user!.name}");
-      // GetStorageHelper.writeData("userId", "${decodedToken["id"]}");
       return Right(user);
     } on ServerException catch (e) {
       return Left(e.errorModel);

@@ -107,13 +107,15 @@ class ApiService extends ApiConsumer {
       Map<String, String>? headers,
       dynamic data,
       bool isFormData = false,
-      String? contentType}) async {
+      String? contentType,
+      ResponseType? responseType}) async {
     try {
       final response = await dio.post(path,
           queryParameters: query,
           data: isFormData ? FormData.fromMap(data) : data,
           options: Options(
             //ex=>  contentType: Headers.formUrlEncodedContentType,
+            responseType: responseType,
             contentType: contentType ?? 'application/json',
             headers: headers, //{'Authorization': 'Bearer $token'}
           ));

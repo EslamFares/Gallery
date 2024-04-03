@@ -19,7 +19,7 @@ class GalleryGridView extends StatelessWidget {
               childAspectRatio: 1,
               crossAxisSpacing: 15,
               mainAxisSpacing: 15),
-          itemCount: 15,
+          itemCount: homeCubit.myGalleryData!.data!.images!.length,
           itemBuilder: (context, index) {
             return Container(
               height: 120,
@@ -27,7 +27,7 @@ class GalleryGridView extends StatelessWidget {
               decoration: BoxDecoration(
                   color: Colors.red, borderRadius: BorderRadius.circular(15)),
               child: CustomNetWorkImg(
-                homeCubit.myGalleryData!.data!.images![1],
+                homeCubit.myGalleryData!.data!.images![index],
                 elevation: 0,
                 fit: BoxFit.fill,
                 customRaduis: BorderRadius.circular(15),

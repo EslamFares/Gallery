@@ -5,8 +5,6 @@ import 'package:gallery_app/core/func/mybloc_observer.dart';
 import 'package:gallery_app/features/home/cubit/home_cubit.dart';
 import 'package:gallery_app/features/home/view/home_view.dart';
 
-import 'package:gallery_app/features/login/cubit/login_cubit.dart';
-import 'package:gallery_app/features/login/view/login_view.dart';
 import 'package:get_storage/get_storage.dart';
 
 void main() async {
