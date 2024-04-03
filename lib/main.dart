@@ -29,13 +29,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:
-          // BlocProvider(
-          //   create: (context) => getIt<HomeCubit>()..getMYGalleryData(),
-          //   child: const HomeView(),
-          // ),
-          //==========
-          BlocProvider(
+      home: BlocProvider(
         create: (context) => getIt<LoginCubit>(),
         child: const LoginView(),
       ),
