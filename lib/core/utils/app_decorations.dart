@@ -10,6 +10,18 @@ abstract class AppDecorations {
       Color(0xffEA94D7),
     ],
   ));
+  static BoxDecoration homePinkContainerBoxDecoration = const BoxDecoration(
+      gradient: LinearGradient(
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+    colors: [
+      Colors.white,
+      Color(0xffDDCDFF),
+      Color(0xffDDCDFF),
+      Color(0xffDDCDFF),
+      // Color(0xffEA94D7),
+    ],
+  ));
   static BoxDecoration loginWhiteContainerBoxDecoration = const BoxDecoration(
       gradient: LinearGradient(
     begin: Alignment.bottomCenter,

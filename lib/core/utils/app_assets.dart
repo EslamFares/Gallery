@@ -10,4 +10,6 @@ abstract class AppAssets {
   //=========================
   static const String homeCameraIcon = "assets/icons/camera.png";
   static const String homeGallerytIcon = "assets/icons/gallery.png";
+  static const String person =
+      "https://st4.depositphotos.com/1017228/20282/i/450/depositphotos_202829886-stock-photo-portrait-smiling-young-man-looking.jpg";
 }

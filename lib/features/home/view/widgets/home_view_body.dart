@@ -16,15 +16,12 @@ class HomeViewBody extends StatelessWidget {
       builder: (context, state) {
         HomeCubit homeCubit = HomeCubit.get(context);
 
-        return Padding(
-          padding: const EdgeInsets.only(left: 16, right: 16, top: 20),
-          child: state is GalleryLoadingState
-              ? const CupertinoActivityIndicator()
-              : state is GalleryFailedState ||
-                      homeCubit.myGalleryData!.data!.images!.isEmpty
-                  ? const Text("No DataFound")
-                  : const GalleryShowView(),
-        );
+        return state is GalleryLoadingState
+            ? const CupertinoActivityIndicator()
+            : state is GalleryFailedState ||
+                    homeCubit.myGalleryData!.data!.images!.isEmpty
+                ? const Text("No DataFound")
+                : const GalleryShowView();
       },
     );
   }

@@ -26,8 +26,4 @@ Future<void> setupGetIt() async {
 
   ///HomeCubit
   getIt.registerLazySingleton<HomeCubit>(() => HomeCubit(getIt<HomeRepo>()));
-
-  //=========home====
-  //registerFactory ==> for more than once use
-  // getIt.registerFactory<HomeCubit>(() => HomeCubit(getIt()));
 }

@@ -24,8 +24,8 @@ Future<dynamic> uploadDilogView(BuildContext context, HomeCubit homeCubit) {
           sigmaY: 3.0,
         ),
         child: Container(
-            width: context.width * .7,
-            height: 200,
+            width: context.width * .8,
+            height: 220,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(15.0),
               color: Colors.white70,
@@ -38,6 +38,7 @@ Future<dynamic> uploadDilogView(BuildContext context, HomeCubit homeCubit) {
                     witdh: context.width * .5,
                     imgHeight: 60,
                     imgWidth: 60,
+                    raduis: 30,
                     bgColor: AppColors.pink,
                     text: "Gellary",
                     textStyle: AppTextStyles.font25BlackBold,
@@ -53,6 +54,7 @@ Future<dynamic> uploadDilogView(BuildContext context, HomeCubit homeCubit) {
                 CustomFilledButton(
                     height: 65,
                     witdh: context.width * .5,
+                    raduis: 30,
                     imgHeight: 60,
                     imgWidth: 60,
                     bgColor: AppColors.blueLight,

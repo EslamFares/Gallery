@@ -15,6 +15,7 @@ class CustomFilledButton extends StatelessWidget {
     this.textStyle,
     this.imgHeight,
     this.imgWidth,
+    this.raduis,
   });
   final double? witdh;
   final double? height;
@@ -25,6 +26,7 @@ class CustomFilledButton extends StatelessWidget {
   final TextStyle? textStyle;
   final double? imgHeight;
   final double? imgWidth;
+  final double? raduis;
 
   @override
   Widget build(BuildContext context) {
@@ -38,7 +40,7 @@ class CustomFilledButton extends StatelessWidget {
         style: FilledButton.styleFrom(
             backgroundColor: bgColor ?? AppColors.white,
             shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(10))),
+                borderRadius: BorderRadius.circular(raduis ?? 10))),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
