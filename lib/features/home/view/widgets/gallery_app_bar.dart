@@ -21,12 +21,12 @@ class GalleryAppBar extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(left: 16),
           child: Text("Welcome\n$name",
-              style: AppTextStyles.font32BlackBold.copyWith(
-                  fontSize: MediaQuery.of(context).size.width > 400 ? 50 : 32)),
+              style: AppTextStyles.font32BlackBold
+                  .copyWith(fontSize: isTablet() ? 50 : 32)),
         ),
         SizedBox(
-          height: MediaQuery.of(context).size.width > 400 ? 250 : 120,
-          width: MediaQuery.of(context).size.width > 400 ? 330 : 200,
+          height: isTablet() ? 250 : 120,
+          width: isTablet() ? 330 : 200,
           child: CustomPaint(
             size: Size(
                 150,
