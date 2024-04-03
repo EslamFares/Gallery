@@ -1,16 +1,33 @@
-# gallery_app
+# Gallery
+## Download apk
+https://github.com/EslamFares/Gallery/blob/master/app/apk/app-release.apk
+## video for ap 
+https://github.com/EslamFares/Gallery/blob/master/app/video/gallery_app_video.mp4
 
-A new Flutter project.
+<h4>Auth <img align="center" height="20" src="https://icons.veryicon.com/png/o/miscellaneous/simple-line-icon/authentication-16.png"></h4>
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+<p float="left">
+  <img src="https://raw.githubusercontent.com/EslamFares/Gallery/master/app/apk/img/1.png" width="80" />
 
-A few resources to get you started if this is your first Flutter project:
+</p>
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+<h4>Home Screen  <img align="center" height="20" src="https://w7.pngwing.com/pngs/848/762/png-transparent-computer-icons-home-house-home-angle-building-rectangle-thumbnail.png"></h4>
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<p float="left">
+  <img src="https://raw.githubusercontent.com/EslamFares/Gallery/master/app/apk/img/2.png" width="80" /><img src="https://raw.githubusercontent.com/EslamFares/Gallery/master/app/apk/img/3.png" width="80" /><img src="https://raw.githubusercontent.com/EslamFares/Gallery/master/app/apk/img/4.png" width="80" /><img src="https://raw.githubusercontent.com/EslamFares/Gallery/master/app/apk/img/5.png" width="80" /><img src="https://raw.githubusercontent.com/EslamFares/Gallery/master/app/apk/img/6.png" width="80" />
+</p>
+
+<h4>Taplet <img align="center" height="20" src="https://cdn-icons-png.freepik.com/512/1530/1530457.png"></h4>
+
+
+<p float="left">
+  <img src="https://raw.githubusercontent.com/EslamFares/Gallery/master/app/img_tablet/1.png" width="80" />
+    <img src="https://raw.githubusercontent.com/EslamFares/Gallery/master/app/img_tablet/2.png" width="80" /> 
+     <img src="https://raw.githubusercontent.com/EslamFares/Gallery/master/app/img_tablet/3.png" width="80" />
+       <img src="https://raw.githubusercontent.com/EslamFares/Gallery/master/app/img_tablet/4.png" width="80" />
+        
+
+</p>
+
+<h5> ©️ Eslam Fares 2024</h5>
